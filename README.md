@@ -1,6 +1,5 @@
 # motionplanners
-Three Heuristics Motion Planners
-Improvements on the RRT Planners
+Three Heuristics Motion Planners used to improve on the RRT Planners. Each motion planning algorithms was tested in 5 differents occupancy grid environments.
 
 1. Mutliple Trees Planner
 
