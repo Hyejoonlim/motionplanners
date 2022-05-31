@@ -1,7 +1,7 @@
 # motionplanners
-Three Heuristics Motion Planners used to improve on the RRT Planners. Each motion planning algorithms was tested in 5 differents occupancy grid environments.
+Three Heuristics Motion Planners used to improve on the RRT Planners. Each motion planning algorithms was tested in 5 differents occupancy grid environments. Only the Safe Expansion Algorithm was able to find a path from the start to the goal position in all 5 environmnets.
 
-1. Mutliple Trees Planner
+1. Mutliple Trees Planner - Using three trees to find the path from the start to the goal position (Only the paths were shown)
 
 <img width="542" alt="Screen Shot 2022-05-18 at 7 09 10 AM" src="https://user-images.githubusercontent.com/67610661/171232038-ca65377f-7c94-4e86-83a5-4a169a008174.png">
 <img width="542" alt="Screen Shot 2022-05-18 at 7 10 34 AM" src="https://user-images.githubusercontent.com/67610661/171232040-db267f5a-a921-46c0-a18c-4ed753938de9.png">
@@ -10,8 +10,7 @@ Three Heuristics Motion Planners used to improve on the RRT Planners. Each motio
 <img width="542" alt="Screen Shot 2022-05-18 at 7 23 36 AM" src="https://user-images.githubusercontent.com/67610661/171232046-e62bc8ee-e101-42d7-8ab0-cb4ec0bcce97.png">
 
 
-
-2. Circle Sampling
+2. Circle Sampling - The next pose of the robot is sample withing a unit circle of the current pose
 
 <img width="542" alt="Screen Shot 2022-05-18 at 7 28 12 AM" src="https://user-images.githubusercontent.com/67610661/171231743-19407a63-cdcd-41af-bbb8-91c865d80b9c.png">
 <img width="542" alt="Screen Shot 2022-05-18 at 7 28 57 AM" src="https://user-images.githubusercontent.com/67610661/171231755-d3d0a95f-204a-4441-a843-71dffbf9e388.png">
@@ -20,7 +19,7 @@ Three Heuristics Motion Planners used to improve on the RRT Planners. Each motio
 <img width="542" alt="Screen Shot 2022-05-18 at 7 38 41 AM" src="https://user-images.githubusercontent.com/67610661/171231820-0683c4e4-0351-4dba-b17e-0503ddb44252.png">
 
 
-3. Safe Expansion
+3. Safe Expansion - The free space in the environment is subset into 10 collision free positions that are the furthest away from the obstacles, and the next pose is sampled from that subset 
 
 <img width="542" alt="Screen Shot 2022-05-18 at 7 43 53 AM" src="https://user-images.githubusercontent.com/67610661/171231939-1aa6d321-80fe-4125-93ba-7613f672bf82.png">
 <img width="542" alt="Screen Shot 2022-05-18 at 7 45 57 AM" src="https://user-images.githubusercontent.com/67610661/171231940-187f060c-49cd-4233-9e30-a87b02c9693d.png">
